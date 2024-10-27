@@ -44,7 +44,7 @@ app.post("/update", async function (req, res) {
     //TODO: fix this bug
     await doc.set({
         name: name,
-         town: 'Whitewater' 
+         town: town 
     });
 
     res.send(`<div hx-target="this" hx-swap="outerHTML" hx-indicator="spinner">
