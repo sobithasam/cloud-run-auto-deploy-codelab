@@ -43,8 +43,8 @@ app.post("/update", async function (req, res) {
 
     //TODO: fix this bug
     await doc.set({
-        name: name
-        /* town: town */
+        name: name,
+         town: 'Whitewater' 
     });
 
     res.send(`<div hx-target="this" hx-swap="outerHTML" hx-indicator="spinner">
